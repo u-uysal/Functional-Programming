@@ -1,0 +1,15 @@
+const squareList = (arr) => {
+  // Only change code below this line
+  let newArr = arr.slice().filter(isInt).map(num=>num**2)
+  return newArr;
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+
+function isInt(n) {
+  if (n % 1 === 0 & n>0)
+   return n;
+}
+console.log(isInt(4))
